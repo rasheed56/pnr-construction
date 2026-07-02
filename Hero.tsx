@@ -62,4 +62,14 @@ export function Hero() {
         transition={{ duration: 1, delay: 1.2 }}
         className="absolute bottom-8 left-8 flex items-center gap-4"
       >
-        <span className="t
+        <span className="text-[10px] uppercase tracking-widest text-muted-foreground rotate-[-90deg] origin-left translate-y-8">Scroll</span>
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+        >
+          <ArrowDown className="w-4 h-4 text-primary mt-12 ml-[-1rem]" />
+        </motion.div>
+      </motion.div>
+    </section>
+  );
+}
