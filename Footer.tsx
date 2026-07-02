@@ -1,5 +1,3 @@
-import logoPath from "@assets/pnr-logo.png";
-
 export function Footer() {
   const currentYear = 2025;
 
@@ -9,7 +7,6 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 mb-12">
           <div className="flex flex-col items-center md:items-start">
             <a href="#" className="flex items-center gap-3 mb-4">
-              <img src={logoPath} alt="PNR Construction Logo" className="h-12 w-12 object-contain grayscale brightness-200" />
               <div className="flex flex-col">
                 <span className="font-serif text-2xl font-bold tracking-tight text-white leading-none">PNR</span>
                 <span className="text-[0.7rem] tracking-[0.2em] text-primary leading-none mt-1">CONSTRUCTION</span>
