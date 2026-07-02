@@ -1,20 +1,20 @@
-import { Navbar } from "./components/sections/Navbar";
-import { Hero } from "./components/sections/Hero";
-import { Stats } from "./components/sections/Stats";
-import { About } from "./components/sections/About";
-import { Services } from "./components/sections/Services";
-import { Portfolio } from "./components/sections/Portfolio";
-import { Gallery } from "./components/sections/Gallery";
-import { WhyChooseUs } from "./components/sections/WhyChooseUs";
-import { Process } from "./components/sections/Process";
-import { Testimonials } from "./components/sections/Testimonials";
-import { CtaBanner } from "./components/sections/CtaBanner";
-import { Contact } from "./components/sections/Contact";
-import { Footer } from "./components/sections/Footer";
-import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
+import { Navbar } from "./Navbar";
+import { Hero } from "./Hero";
+import { Stats } from "./Stats";
+import { About } from "./About";
+import { Services } from "./Services";
+import { Portfolio } from "./Portfolio";
+import { Gallery } from "./Gallery";
+import { WhyChooseUs } from "./WhyChooseUs";
+import { Process } from "./Process";
+import { Testimonials } from "./Testimonials";
+import { CtaBanner } from "./CtaBanner";
+import { Contact } from "./Contact";
+import { Footer } from "./Footer";
+import { FloatingWhatsApp } from "./FloatingWhatsApp";
 import { useEffect } from "react";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { Toaster } from "./toaster";
+import { TooltipProvider } from "./tooltip";
 
 function App() {
   useEffect(() => {
