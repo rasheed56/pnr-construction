@@ -1,16 +1,12 @@
 import { motion } from "framer-motion";
 import { ArrowDown, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroBg from "@assets/hero-bg.png";
 
 export function Hero() {
   return (
     <section className="relative h-screen min-h-[600px] flex items-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      >
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/10">
         <div className="absolute inset-0 bg-background/60" />
       </div>
 
@@ -66,14 +62,4 @@ export function Hero() {
         transition={{ duration: 1, delay: 1.2 }}
         className="absolute bottom-8 left-8 flex items-center gap-4"
       >
-        <span className="text-[10px] uppercase tracking-widest text-muted-foreground rotate-[-90deg] origin-left translate-y-8">Scroll</span>
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-        >
-          <ArrowDown className="w-4 h-4 text-primary mt-12 ml-[-1rem]" />
-        </motion.div>
-      </motion.div>
-    </section>
-  );
-}
+        <span className="t
